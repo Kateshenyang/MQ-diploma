@@ -15,10 +15,10 @@
         <a href="" class="logo-link">
            <img src="svg/noemi-logo.svg" alt="Логотип" class="logo-img"> 
         </a>
-        <svg version="1.1" fill="#fff" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="burger">
-          <title>Menu</title>
-          <path d="M5.333 22.667h21.333v-2.667h-21.333v2.667zM5.333 17.333h21.333v-2.667h-21.333v2.667zM5.333 9.333v2.667h21.333v-2.667h-21.333z"></path>
-        </svg>
+
+        <div class="burger">
+            <span></span>
+        </div>
 
         <nav class="menu">
           <ul class="menu-list">
@@ -51,8 +51,10 @@
 
   <div class="pop-up-container _hidden">
     <form class="pop-up-content">
-      <label for="#" class="popup_close">&times;</label>
-      <h1 class="header-popup">Ваш фидбек</h1>
+      <button class="popup_close" type="button-close">
+        <span></span>
+      </button>
+      <h2 class="header-popup">Ваш фидбек</h2>
       <div class="frequency-area">
         <label for="selection-area" class="question">Как часто вы заходите на сайт?</label>
         <select class="choose-option">
@@ -90,8 +92,14 @@
         <aticle class="trend-article">
           <div class="trend-container trend-1">
             <div class="trend-content">
-              <a href="#0" class="tegs_item_link">lifestyle</a>
-              <a href="#0" class="tegs_item_link">interior</a>
+              <ul class="tegs">
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">lifestyle</a>
+                </li>  
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">interior</a>
+                </li>
+              </ul>
               <h2 class="trend-name"><a href="" class="trend-link">сейчас в тренде: сад на подоконнике</a></h2>
             </div>
           </div>
@@ -99,7 +107,11 @@
         <aticle class="trend-article">
           <div class="trend-container trend-2">
             <div class="trend-content">
-              <a href="#0" class="tegs_item_link">food</a>
+              <ul class="tegs">
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">food</a>
+                </li>
+              </ul>
               <h2 class="trend-name"><a href="" class="trend-link">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
             </div>
           </div>
@@ -107,8 +119,14 @@
         <aticle class="trend-article">
           <div class="trend-container trend-3">
             <div class="trend-content">
-              <a href="#0" class="tegs_item_link">lifestyle</a>
-              <a href="#0" class="tegs_item_link">travel</a>
+              <ul class="tegs">
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">lifestyle</a>
+                </li>  
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">travel</a>
+                </li>
+              </ul>
               <h2 class="trend-name"><a href="" class="trend-link">собираемся в первый поход в горы</a></h2>
             </div>
           </div>
@@ -116,8 +134,14 @@
         <aticle class="trend-article">
           <div class="trend-container  trend-4">
             <div class="trend-content">
-              <a href="#0" class="tegs_item_link">food</a>
-              <a href="#0" class="tegs_item_link">health</a>
+              <ul class="tegs">
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">food</a>
+                </li>  
+                <li class="tegs-item">
+                  <a href="#0" class="tegs_item_link">health</a>
+                </li>
+              </ul>
               <h2 class="trend-name"><a href="" class="trend-link">сейчас в тренде: сколько витаминов в лимонах?</a></h2>
             </div>
           </div>
@@ -128,7 +152,7 @@
 
   <div class="content">
     <main class="page">
-      <div class="article">
+      <article class="article">
         <div class="article-png">
           <img src="images/last-post1.jpg" alt="картинка1" class="article-img">
         </div>
@@ -148,7 +172,7 @@
           </div>
           <p class="text">Итак, вы в Питере. Ранее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... музеи еще закрыты. Что посмотреть?</p>
         </div>
-      </div>
+      </article>
       <article class="article">
         <div class="article-png">
           <img src="images/last-post2.jpg" alt="картинка2" class="article-img">
@@ -246,8 +270,7 @@
           </div>
           <div class="sidebar-content">
             <time class="date-sidebar" datetime="2019-07-14">14 июня 2019</time>
-            <h4 class="sidebar-text">10 мест, ради которых стоит проснуться на рассвете
-            </h4>
+            <h4><a class="sidebar-text" href="#">10 мест, ради которых стоит проснуться на рассвете</a></h4>
           </div>
         </div>
         <div class="sidebar-content1">
@@ -256,8 +279,7 @@
           </div>
           <div class="sidebar-content">
             <time class="date-sidebar" datetime="2019-07-14">14 июня 2019</time>
-            <h4 class="sidebar-text">йога для домашних
-            </h4>
+            <h4><a class="sidebar-text" href="#">йога для домашних</a></h4>
           </div>
         </div>
         <div class="sidebar-content1">
@@ -266,39 +288,45 @@
           </div>
           <div class="sidebar-content">
             <time class="date-sidebar" datetime="2019-07-14">14 июня 2019</time>
-            <h4 class="sidebar-text">как мы превратили классное место в балкон
-            </h4>
+            <h4><a class="sidebar-text" href="#">как мы превратили классное место в балкон</a></h4>
           </div>
         </div>
-        <article class="sidebar-content1">
+        <div class="sidebar-content1">
           <div class="new-post-png">
             <img src="images/501.jpg" alt="картинка10" class="new-post-img">
           </div>
           <div class="sidebar-content">
             <time class="date-sidebar" datetime="2019-07-14">14 июня 2019</time>
-            <h4 class="sidebar-text">кулинарный подход к науке
-            </h4>
+            <h4><a class="sidebar-text" href="#">кулинарный подход к науке</a></h4>
           </div>
-        </article>
+        </div>
         <div class="sidebar-content1">
           <div class="new-post-png">
             <img src="images/7.jpg" alt="картинка11" class="new-post-img">
           </div>
           <div class="sidebar-content">
             <time class="date-sidebar" datetime="2019-07-14">14 июня 2019</time>
-            <h4 class="sidebar-text">лучшие прически для распущенных волос
-            </h4>
+            <h4><a class="sidebar-text" href="#">лучшие прически для распущенных волос</a></h4>
           </div>
         </div>
+
         <form action="#0" class="form">
+          <label class="search-group">
+            <span class="hidden">Поле ввода</span>
           <input type="search" class="search_txt" placeholder="Найти..." required>
+          </label>
+          <label class="search-button">
+            <span class="hidden">Кнопка поиска</span>
           <button type="submit" class="button_search"></button>
+          </label>
         </form>
       </section>
       <section class="subscribe">
         <h2 class="title-tag-aside">Рассылка</h2>
         <form action="#0" class="form_subscribe">
-          <input type="email" class="txt_subscribe" placeholder="Ваш email-адрес" required>
+          <label class="subscribe-form">
+            <input type="email" class="txt_subscribe" placeholder="Ваш email-адрес" alt="поле для ввода почты" required>
+          </label>
           <button type="submit" class="send_btn">Подписаться</button>
         </form>
       </section>
@@ -342,28 +370,22 @@
           <div class="topic-list">
             <ul class="topic-menu-list">
               <li class="topic-item">
-                <a href="#0" class="topic-menu-link">Красота</a><span class="topic-text">12</span>
-                <div class="box-topic"></div>
+                <a href="#0" class="topic-menu-link">Красота</a><span class="topic-text">12</span>  
               </li>
               <li class="topic-item">
                 <a href="#0" class="topic-menu-link">Здоровье</a><span class="topic-text">4</span>
-                <div class="box-topic"></div>
               </li>
               <li class="topic-item">
                 <a href="#0" class="topic-menu-link">Образ жизни</a><span class="topic-text">145</span>
-                <div class="box-topic"></div>
               </li>
               <li class="topic-item">
                 <a href="#0" class="topic-menu-link">Музыка</a><span class="topic-text">28</span>
-                <div class="box-topic"></div>
               </li>
               <li class="topic-item">
                 <a href="#0" class="topic-menu-link">Спорт</a><span class="topic-text">62</span>
-                <div class="box-topic"></div>
               </li>
               <li class="topic-item">
                 <a href="#0" class="topic-menu-link">Йога</a><span class="topic-text">8</span>
-                <div class="box-topic"></div>
               </li>
             </ul>
           </div>
@@ -376,7 +398,15 @@
     <h2 class="our-craft">Наши изделия</h2>
     <div class="shop-container">
       <div class="craft-item-card">
-        <img src="images/shop-item-desk1.jpg" alt="подушки" class="craft-img">
+        <picture class="craft-img">
+            <source
+              media="(min-width: 1200px)"
+              srcset="images/shop-item-desk1.jpg">
+            <source
+              media="(min-width: 641px)"
+              srcset="images/shop-item-tablet1.jpg">  
+            <img src="images/shop-item-desk1.jpg" alt="подушки">
+        </picture>
         <div class="craft-container">
           <h2 class="craft-name">подушки на диван</h2>
           <p class="craft-dscrt">Набор издвух подушек с модными принтами. Видео о создании <a href="" class="craft-link">здесь</a>.</p>
@@ -390,7 +420,15 @@
         </div>
       </div>
       <div class="craft-item-card">
-        <img src="images/shop-item-desk2.jpg" alt="кукла" class="craft-img">
+        <picture class="craft-img">
+          <source
+            media="(min-width: 1200px)"
+            srcset="images/shop-item-desk2.jpg">
+          <source
+            media="(min-width: 641px)"
+            srcset="images/shop-item-tablet2.jpg">  
+          <img src="images/shop-item-desk2.jpg" alt="кукла">
+        </picture>
         <div class="craft-container">
           <h2 class="craft-name">кукла "зайчик"</h2>
           <p class="craft-dscrt">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="" class="craft-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -403,7 +441,15 @@
         </div>
       </div>
       <div class="craft-item-card">
-        <img src="images/shop-item-desk3.jpg" alt="рамка" class="craft-img">
+        <picture class="craft-img">
+          <source
+            media="(min-width: 1200px)"
+            srcset="images/shop-item-desk3.jpg">
+          <source
+            media="(min-width: 641px)"
+            srcset="images/shop-item-tablet3.jpg">  
+          <img src="images/shop-item-desk3.jpg" alt="рамка">
+        </picture>
         <div class="craft-container">
           <h2 class="craft-name">шестиугольная рамка</h2>
           <p class="craft-dscrt">Необычная рамка для украшения дома из видео <a href="" class="craft-link">"Как сделать рамку из подручных средств за 30 минут"</a></p>

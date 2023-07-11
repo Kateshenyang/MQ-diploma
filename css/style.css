@@ -370,6 +370,10 @@ a{
   margin-top: 7px;
 }
 
+.trend-link:hover {
+  color: #b59f5b;
+}
+
 .title {
   font-family: "Open Sans", sans-serif;
   width: 679px;
@@ -740,13 +744,15 @@ a{
 
 .shop-container {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 64px;
 }
 
 .craft-item-card {
-  width: 33.33%;
-  margin: 29px 56px 84px;
+  width: 30%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .craft-img {
@@ -757,7 +763,6 @@ a{
 
 .craft-container {
   outline: 3px solid #d3c59d;
-  outline-offset: 20px;
   padding: 20px;
   margin-top: -20px;
   flex-grow: 1;
@@ -983,10 +988,6 @@ a{
     margin-bottom: 31px;
   }
 
-  .footer {
-    margin-top: 45px;
-  }
-
   .footer__link {
     font-weight: bold;
   }
@@ -1117,6 +1118,7 @@ a{
     margin: 44px 0;
     width: 100%;
     font-size: 26px;
+    line-height: 35px;
   }
 
   .trends-gallery {
@@ -1169,9 +1171,7 @@ a{
   .article_meta {
     margin: 20px 0;
   }
-  .text {
-    margin-bottom: 24px;
-  }
+
   .text {
     margin-bottom: 0;
   }
@@ -1180,7 +1180,7 @@ a{
   }
   .sidebar {
     margin-left: 0;
-    width: 100%;
+    min-width: 100%;
     margin-top: 44px;
   }
   .title-sidebar {
@@ -1189,12 +1189,16 @@ a{
   .search_txt {
     width: 100%;
   }
+
+  .search-group {
+    width: 100%;
+  }
+
   .title-tag-aside {
     font-size: 16px;
   }
 
   .tag-item {
-    flex-grow: 1;
     text-align: center;
   }
 
@@ -1209,8 +1213,8 @@ a{
     margin: 29px 56px 25px;
   }
 
-  .footer {
-    padding-top: 43px;
+  .contacts {
+    padding: 0;
   }
 
   .contacts__logo {
@@ -1255,6 +1259,7 @@ a{
     margin: 44px 0;
     width: 100%;
     font-size: 26px;
+    line-height: 35px;
   }
 
   .trend-content {
@@ -1269,6 +1274,15 @@ a{
   .trend-article {
     width: 100%;
     margin: 3px 0;
+  }
+  .trend-1 {
+    width: 100%;
+  }
+  .trend-3 {
+    width: 100%;
+  }
+  .trend-4 {
+    width: 100%;
   }
 
   .trend-link {
@@ -1310,9 +1324,7 @@ a{
   .article_meta {
     margin: 20px 0;
   }
-  .text {
-    margin-bottom: 24px;
-  }
+
   .text {
     margin-bottom: 0;
   }
@@ -1321,7 +1333,7 @@ a{
   }
   .sidebar {
     margin-left: 0;
-    width: 100%;
+    min-width: 100%;
     margin-top: 44px;
   }
   .title-sidebar {
@@ -1330,6 +1342,11 @@ a{
   .search_txt {
     width: 100%;
   }
+
+  .search-group {
+    width: 100%;
+  }
+
   .title-tag-aside {
     font-size: 16px;
   }
@@ -1339,7 +1356,6 @@ a{
   }
 
   .tag-item {
-    flex-grow: 1;
     text-align: center;
   }
 
@@ -1349,13 +1365,14 @@ a{
   .shop-container {
     flex-wrap: wrap;
   }
+
   .craft-item-card {
     width: 100%;
     margin: 29px 56px 25px;
   }
 
-  .footer {
-    padding-top: 43px;
+    .contacts {
+    padding: 0;
   }
 
   .contacts__logo {
